@@ -1,0 +1,31 @@
+.wrapper {
+    @apply flex justify-center items-center py-[100px]
+}
+
+.container {
+    @apply flex justify-between mx-auto w-[950px] h-[560px] bg-black text-inherit
+}
+
+.brandCard {
+    @apply flex flex-col items-center justify-center
+}
+
+.signinCard {
+    @apply flex flex-col justify-between bg-[#353535] text-center rounded-[15px] px-[50px] py-[31px] text-[26px]
+}
+
+.form {
+    @apply flex flex-col items-center text-inherit
+}
+
+.input {
+    @apply bg-inherit outline-0 outline-offset-0 border-b-[3px] mb-10
+}
+
+.button {
+    @apply bg-[#2771FF] rounded-[15px]
+}
+
+.google {
+   @apply bg-white rounded-[15px] text-black flex justify-evenly items-center w-[210px] mx-auto
+}

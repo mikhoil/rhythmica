@@ -1,0 +1,11 @@
+.navbar {
+    @apply flex items-center justify-between w-[514px] mr-[59px] text-[26px];
+}
+
+.active {
+    @apply text-[#2771FF] underline;
+}
+
+.inactive {
+    @apply text-inherit;
+}
