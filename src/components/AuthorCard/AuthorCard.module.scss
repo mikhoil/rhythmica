@@ -1,0 +1,17 @@
+.container {
+    @apply flex flex-col items-center rounded-[15px] max-h-[220px] max-w-[220px] pt-2.5 pb-[15px] border-[3px] border-transparent text-base box-border hover:border-[#2771ff]
+}
+
+.icons {
+    @apply hidden flex-col items-center absolute mt-[45px] z-10
+}
+
+.container:hover {
+    .icons {
+        @apply flex opacity-100
+    }
+
+    .avatar {
+        @apply opacity-50
+    }
+}

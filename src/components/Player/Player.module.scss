@@ -1,0 +1,47 @@
+.container {
+    @apply fixed w-full bottom-0 z-50
+}
+
+.scrollbar {
+    @apply flex h-3.5
+}
+
+.blue {
+    @apply bg-[#2771ff] w-1/4
+}
+
+.white {
+    @apply bg-[#d1d1d1] w-full
+}
+
+.trackbar {
+    @apply flex h-[76px] bg-[#353535] pl-[34px] pr-[182px]
+}
+
+.playback {
+    @apply flex items-center justify-between w-[186px] mr-[60px]
+}
+
+.info {
+    @apply flex items-center w-[235px] justify-between mr-[100px]
+}
+
+.img {
+    @apply w-[50px] h-[50px] bg-[#d1d1d1]
+}
+
+.track {
+    @apply text-[22px]
+}
+
+.group {
+    @apply text-base
+}
+
+.actions {
+    @apply flex items-center justify-between w-[166px] mr-[442px]
+}
+
+.volume {
+    @apply flex items-center
+}

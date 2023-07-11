@@ -16,7 +16,7 @@ export const Navbar = () => {
                 className={({ isActive }) =>
                     isActive ? styles.active : styles.inactive
                 }
-                to={'/my-collection'}
+                to={'/me'}
             >
                 Моя коллекция
             </NavLink>

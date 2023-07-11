@@ -1,0 +1,37 @@
+.container {
+    @apply flex py-2.5 rounded-[15px] justify-between my-[15px] hover:bg-[#646464]
+}
+
+.left {
+   @apply flex
+}
+
+.track {
+    @apply text-xl
+}
+
+.group {
+    @apply text-base
+}
+
+.right {
+    @apply flex items-center w-[195px] justify-between
+}
+
+.actions {
+    @apply flex w-[65px] justify-between
+}
+
+.time {
+    @apply w-[100px] text-center
+}
+
+.trackHover {
+    @apply hidden m-auto
+}
+
+.container:hover {
+    .trackHover {
+        @apply block
+    }
+}

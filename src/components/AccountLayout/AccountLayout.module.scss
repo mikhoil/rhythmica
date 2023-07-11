@@ -1,0 +1,43 @@
+.container {
+    @apply px-[120px] pt-[17px] flex flex-col justify-between
+}
+
+.header {
+    @apply flex h-[111px] w-full
+}
+
+.avatar {
+    @apply absolute ml-[120px]
+}
+
+.userbar {
+    @apply flex bg-[#353535] rounded-[15px] h-[80px] w-full justify-around items-center self-end
+}
+
+.username {
+    @apply text-[26px] ml-[60px]
+}
+
+.becomeAuthor {
+    @apply text-lg bg-[#2771ff] w-60 rounded-[15px]
+}
+
+.nav {
+    @apply flex justify-between items-center my-[15px] h-[60px] text-[22px]
+}
+
+.navlink {
+    @apply w-60 text-center rounded-[15px] h-full flex
+}
+
+.active {
+    @apply bg-[#353535]
+}
+
+.text {
+    @apply m-auto
+}
+
+.content {
+    @apply bg-[#353535] rounded-[15px] p-10 mb-24
+}

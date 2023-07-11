@@ -5,16 +5,17 @@ import outlinedHeart from '../../assets/outlinedHeart.svg';
 import add from '../../assets/add.svg';
 import close from '../../assets/close.svg';
 import volume from '../../assets/volume.svg';
+import styles from './Player.module.scss';
 
 export const Player = () => {
     return (
-        <div className="fixed w-full bottom-0">
-            <div className="flex h-3.5">
-                <div className="bg-[#2771ff] w-1/4"></div>
-                <div className="bg-[#d1d1d1] w-full"></div>
+        <div className={styles.container}>
+            <div className={styles.scrollbar}>
+                <div className={styles.blue}></div>
+                <div className={styles.white}></div>
             </div>
-            <div className="flex h-[76px] bg-[#353535] pl-[34px] pr-[182px]">
-                <div className="flex items-center justify-between w-[186px] mr-[60px]">
+            <div className={styles.trackbar}>
+                <div className={styles.playback}>
                     <button>
                         <img src={prev} alt="" />
                     </button>
@@ -25,14 +26,14 @@ export const Player = () => {
                         <img src={next} alt="" />
                     </button>
                 </div>
-                <div className="flex items-center w-[235px] justify-between mr-[100px]">
-                    <div className="w-[50px] h-[50px] bg-[#d1d1d1]" />
+                <div className={styles.info}>
+                    <div className={styles.img} />
                     <div>
-                        <p className="text-[22px]">Название трека</p>
-                        <p className="text-base">Название группы</p>
+                        <p className={styles.track}>Название трека</p>
+                        <p className={styles.group}>Название группы</p>
                     </div>
                 </div>
-                <div className="flex items-center justify-between w-[166px] mr-[442px]">
+                <div className={styles.actions}>
                     <button>
                         <img src={outlinedHeart} alt="" />
                     </button>
@@ -43,7 +44,7 @@ export const Player = () => {
                         <img src={close} alt="" />
                     </button>
                 </div>
-                <div className="flex items-center">
+                <div className={styles.volume}>
                     <button>
                         <img src={volume} alt="" />
                     </button>
