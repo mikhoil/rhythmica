@@ -1,3 +1,5 @@
-export const NewsPage = () => {
+const NewsPage = () => {
     return <div>NewsPage</div>;
 };
+
+export default NewsPage;

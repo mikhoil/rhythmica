@@ -9,8 +9,10 @@ import { Layout } from './components/Layout/Layout';
 import { HomePage } from './pages/HomePage/HomePage';
 import { SignUpPage } from './pages/SignUpPage/SignUpPage';
 import { MyCollectionPage } from './pages/MyCollectionPage/MyCollectionPage';
-import { NewsPage } from './pages/NewsPage/NewsPage';
 import { SignInPage } from './pages/SignInPage/SignInPage';
+import { lazy } from 'react';
+
+const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
 
 function App() {
     const router = createBrowserRouter(
