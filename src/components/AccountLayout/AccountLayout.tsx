@@ -5,8 +5,10 @@ import { Suspense } from 'react';
 
 export const AccountLayout = () => {
     const { pathname } = useLocation();
-    if (pathname === '/me') return <Navigate to={'tracks'} />;
-    return (
+
+    return pathname === '/me' || pathname === '/me/' ? (
+        <Navigate to={'tracks'} />
+    ) : (
         <div className={styles.container}>
             <header className={styles.header}>
                 <img

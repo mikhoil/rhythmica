@@ -1,13 +1,13 @@
 .container {
-    @apply flex flex-col justify-between p-2.5 w-[200px] text-sm max-h-[280px] border-[3px] border-transparent rounded-[15px] hover:border-[#2771ff]
+    @apply flex flex-col justify-between p-2.5 w-[200px] text-sm max-h-[280px] border-[3px] border-transparent rounded-[15px] hover:border-[#2771ff];
+    
+    &:hover {
+        .icons {
+            @apply flex;
+        }
+    }
 }
 
 .icons {
-    @apply hidden flex-col items-center self-center absolute mt-[61px] z-10 h-[102px] justify-between
-}
-
-.container:hover {
-    .icons {
-        @apply flex
-    }
+    @apply hidden flex-col items-center self-center relative top-[15px] -mt-[163px] z-10 h-[102px] justify-between;
 }

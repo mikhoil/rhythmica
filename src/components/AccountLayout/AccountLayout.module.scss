@@ -1,43 +1,47 @@
 .container {
-    @apply px-[120px] pt-[17px] flex flex-col justify-between
+    @apply px-[120px] pt-[17px] flex flex-col justify-between mb-[100px];
 }
 
 .header {
-    @apply flex h-[111px] w-full
+    @apply flex h-[111px] w-full justify-start;
 }
 
 .avatar {
-    @apply absolute ml-[120px]
+    @apply relative -ml-[100px] left-[220px];
 }
 
 .userbar {
-    @apply flex bg-[#353535] rounded-[15px] h-[80px] w-full justify-around items-center self-end
+    @apply flex bg-[#353535] rounded-[15px] h-[80px] w-full justify-around items-center self-end;
 }
 
 .username {
-    @apply text-[26px] ml-[60px]
+    @apply text-[26px] ml-[60px];
 }
 
 .becomeAuthor {
-    @apply text-lg bg-[#2771ff] w-60 rounded-[15px]
+    @apply text-lg bg-[#2771ff] w-60 rounded-[15px];
 }
 
 .nav {
-    @apply flex justify-between items-center my-[15px] h-[60px] text-[22px]
+    @apply flex justify-between items-center my-[15px] h-[60px] text-[22px];
 }
 
 .navlink {
-    @apply w-60 text-center rounded-[15px] h-full flex
+    @apply w-60 text-center rounded-[15px] h-full flex;
 }
 
 .active {
-    @apply bg-[#353535]
+    @apply bg-[#353535];
 }
 
 .text {
-    @apply m-auto
+    @apply m-auto;
 }
 
 .content {
-    @apply bg-[#353535] rounded-[15px] p-10 mb-24
+    @apply bg-[#353535] rounded-[15px] p-10 mb-24;
+}
+
+nav a:hover {
+    @apply bg-[#353535];
 }

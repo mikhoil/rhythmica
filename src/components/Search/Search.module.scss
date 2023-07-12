@@ -3,9 +3,9 @@
 }
 
 .input {
-    @apply outline-0 outline-offset-0 border-b w-[232px] text-base mr-[15px] bg-inherit
-}
+    @apply outline-0 outline-offset-0 border-b w-[232px] text-base mr-[15px] bg-inherit;
 
-.input::-webkit-search-cancel-button {
-    -webkit-appearance: none;
+    &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
 }

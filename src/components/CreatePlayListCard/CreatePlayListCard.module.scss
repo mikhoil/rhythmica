@@ -1,13 +1,13 @@
 .container {
-    @apply flex flex-col w-[200px] max-h-[260px] p-2.5 rounded-[15px] border-[3px] border-transparent
+    @apply flex flex-col w-[200px] max-h-[260px] p-2.5 rounded-[15px] border-[3px] border-transparent;
+    
+    &:hover {
+        .playlist {
+            @apply opacity-50;
+        }
+    }
 }
 
 .add {
-    @apply flex self-center m-[60px] absolute
-}
-
-.container:hover {
-    .playlist {
-      @apply opacity-50
-    }
+    @apply flex self-center mx-[60px] relative -mt-[60px] -top-[60px];
 }

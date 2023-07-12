@@ -1,0 +1,19 @@
+.content {
+    @apply overflow-y-auto h-screen box-border;
+
+    &::-webkit-scrollbar {
+        @apply w-[17px];
+    }
+
+    &::-webkit-scrollbar-track {
+        @apply rounded-[15px] bg-[#353535] mt-[48px] mb-[200px];
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply bg-[#afafaf] rounded-[15px] border-4 border-[#353535] border-solid;
+
+        &:hover {
+            @apply bg-[#d1d1d1]
+        }
+    }
+}

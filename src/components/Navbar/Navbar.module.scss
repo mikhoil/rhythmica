@@ -9,3 +9,7 @@
 .inactive {
     @apply text-inherit;
 }
+
+.navbar a:hover {
+    @apply text-[#2771ff]
+}

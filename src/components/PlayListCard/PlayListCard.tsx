@@ -7,8 +7,10 @@ export const PlayListCard = () => {
         <div className={styles.container}>
             <img src={defaultAlbum} alt="" />
             <img src={playCircle} className={styles.play} alt="" />
-            <h1 className="text-base font-bold">Название плейлиста</h1>
-            <h2 className="text-sm">Имя автора</h2>
+            <div>
+                <h1 className="text-base font-bold">Название плейлиста</h1>
+                <h2 className="text-sm">Имя автора</h2>
+            </div>
         </div>
     );
 };

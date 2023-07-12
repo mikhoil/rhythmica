@@ -11,9 +11,11 @@ export const AlbumCard = () => {
                 <img src={playCircle} alt="" />
                 <img src={heart} alt="" />
             </div>
-            <h1 className="text-base font-bold">Название альбома</h1>
-            <h2>Имя исполнителя</h2>
-            <h3>2023 &bull; Альбом</h3>
+            <div>
+                <h1 className="text-base font-bold">Название альбома</h1>
+                <h2>Имя исполнителя</h2>
+                <h3>2023 &bull; Альбом</h3>
+            </div>
         </div>
     );
 };

@@ -1,13 +1,13 @@
 .container {
-    @apply flex flex-col w-[200px] max-h-[260px] p-2.5 rounded-[15px] border-[3px] border-transparent hover:border-[#2771ff]
+    @apply flex flex-col w-[200px] max-h-[260px] p-2.5 rounded-[15px] border-[3px] border-transparent hover:border-[#2771ff];
+
+    &:hover {
+        .play {
+            @apply block;
+        }
+    }
 }
 
 .play {
-    @apply hidden self-center m-[60px] absolute
-}
-
-.container:hover {
-    .play {
-        @apply block
-    }
+    @apply hidden self-center mx-[60px] -mt-[60px] -top-[60px] relative;
 }
