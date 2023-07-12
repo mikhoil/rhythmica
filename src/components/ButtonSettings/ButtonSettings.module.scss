@@ -1,0 +1,33 @@
+.buttonSettings{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2771FF;
+    border-radius: 30px;
+    padding: 2px 15px;
+    max-width: 200px;
+    min-height: 50px;
+    gap: 10px;
+
+    .buttonSettingsName{
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .buttonSettingsLogo{
+
+    }
+
+    &:hover{
+        background-color: #0E3E9B;
+        cursor: pointer;
+    }
+
+    &:active{
+        border: #D1D1D1 solid 3px;
+        .buttonSettingsName{
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.genreButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin: 30px 0;
+
+    .genreImg{
+        max-width: 70px;
+        max-height: 70px;
+        border-radius: 50%;
+        background-color: #0E3E9B;
+    }
+
+    .genreName{
+        font-size: 18px;
+        font-family: "Roboto Light";
+    }
+
+    &:hover{
+        cursor: pointer;
+        .genreImg{
+            border: #2771FF solid 3px;
+        }
+
+        .genreName{
+            color: #2771FF;
+        }
+    }
+
+    &:active{
+        .genreName{
+            color: #0E3E9B;
+        }
+        .genreImg{
+            border: #0E3E9B solid 3px;
+        }
+    }
+
+}
+

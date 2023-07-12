@@ -1,0 +1,15 @@
+.button-wave{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #D1D1D1;
+    font-family: "Roboto Light";
+    font-size: 28px;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.button-wave:hover{
+    cursor: pointer;
+}
