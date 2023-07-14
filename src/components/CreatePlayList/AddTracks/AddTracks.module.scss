@@ -1,0 +1,39 @@
+.content {
+    @apply pt-[15px] overflow-auto pl-[15px] h-[550px];
+
+        &::-webkit-scrollbar {
+        @apply w-[17px];
+    }
+
+    &::-webkit-scrollbar-track {
+        @apply rounded-[15px] bg-[#707070] mt-[20px];
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply bg-[#afafaf] rounded-[15px] border-4 border-[#707070] border-solid;
+
+        &:hover {
+            @apply bg-[#d1d1d1]
+        }
+    }
+}
+
+.track {
+    @apply flex items-center mr-2 rounded-[10px] hover:bg-[#707070];
+    &:has(>.checkbox:checked) {
+        @apply bg-[#707070]
+    }
+}
+
+.checkmark {
+    background: url('../../../assets/customUnchecked.svg') no-repeat;
+    @apply w-5 h-5
+}
+
+.checkbox {
+    @apply relative -z-10 opacity-0;
+
+    &:checked +.checkmark {
+            background: url('../../../assets/customChecked.svg') no-repeat;
+    }
+}

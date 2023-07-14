@@ -1,0 +1,19 @@
+.content {
+    @apply h-[301px] w-full flex justify-center overflow-auto pt-[15px];
+
+        &::-webkit-scrollbar {
+        @apply w-[17px];
+    }
+
+    &::-webkit-scrollbar-track {
+        @apply bg-[#646464] mt-7 mb-3 rounded-[15px];
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply bg-[#afafaf] border-4 border-[#646464] rounded-[15px] border-solid;
+
+        &:hover {
+            @apply bg-[#d1d1d1]
+        }
+    }
+}

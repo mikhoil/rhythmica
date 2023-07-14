@@ -1,0 +1,17 @@
+.modal {
+    .ant-modal-content {
+        @apply bg-[#353535] text-[#d1d1d1] p-0 max-h-[800px] rounded-[15px]
+    }
+
+    .ant-modal-header {
+        @apply border-b border-[#d9d9d9] mb-0 h-[50px] flex items-center rounded-t-[15px] bg-[#353535] text-[#d1d1d1] py-0
+    }
+
+    .ant-modal-close {
+        @apply top-3 right-3
+    }
+
+    .ant-modal-title {
+        @apply text-lg ml-[30px] bg-[#353535] text-[#d1d1d1]
+    }
+}

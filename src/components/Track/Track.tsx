@@ -2,8 +2,9 @@ import heart from '../../assets/heart.svg';
 import add from '../../assets/add.svg';
 import styles from './Track.module.scss';
 import trackHover from '../../assets/trackHover.svg';
+import { FC } from 'react';
 
-export const Track = () => {
+export const Track: FC<{ title?: string }> = ({ title = 'Название трека' }) => {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
@@ -15,7 +16,7 @@ export const Track = () => {
                     />
                 </button>
                 <div>
-                    <h1 className={styles.track}>Название трека</h1>
+                    <h1 className={styles.track}>{title}</h1>
                     <h2 className={styles.group}>Название исполнителя</h2>
                 </div>
             </div>
